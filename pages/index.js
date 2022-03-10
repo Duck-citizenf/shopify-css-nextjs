@@ -5,7 +5,7 @@ import ProductList from '../components/ProductList'
 export default function Home({products}) {
   console.log(products)
   return (
-    <div class="text-3xl">
+    <div className="text-3xl">
       <ProductList products={products}/>
     </div>
   )
