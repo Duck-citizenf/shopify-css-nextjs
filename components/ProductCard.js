@@ -9,9 +9,9 @@ import Image from 'next/image'
         <Link
             href={`/products/${handle}`}
         >
-            <a class="group">
-                <div class="bg-gray-200 rounded-3xl overflow-hidden">
-                    <div class="relative group-hover:opacity-75 h-72 w-60">
+            <a className="group">
+                <div className="bg-gray-200 rounded-3xl overflow-hidden">
+                    <div className="relative group-hover:opacity-75 h-72 w-60">
                         <Image
                             src={originalSrc}
                             alt={altText}
@@ -20,8 +20,8 @@ import Image from 'next/image'
                         />
                     </div>
                 </div>
-                <h3 class="mt-4">{title}</h3>
-                <p class="text-sm">${price}</p>
+                <h3 className="mt-4">{title}</h3>
+                <p className="text-sm">${price}</p>
             </a>
         </Link>
     )
