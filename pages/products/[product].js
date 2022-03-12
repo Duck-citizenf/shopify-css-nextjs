@@ -5,7 +5,7 @@ import {getProduct} from "../../lib/shopify"
 export default function ProductPage({product}) {
   return (
     <div>
-      <ProductPageContent product={product}/>
+      <ProductPageContent product={ product }/>
     </div>
   )
 }

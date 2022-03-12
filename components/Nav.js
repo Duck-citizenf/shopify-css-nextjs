@@ -8,7 +8,9 @@ export default function Nav() {
                 Shopify+Next.js
             </Link>
             <a className="text-md">
+            <Link href={`/Cart`}>
                 Cart
+            </Link>
             </a>
         </div>
     </header>
