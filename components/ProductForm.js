@@ -4,7 +4,6 @@ import {formatter} from '../utils/helpers'
 import { CartContext } from '../context/shopContext'
 
 export default function ProductForm({product}) {
-  //console.log(product)
   const {addToCart} = useContext(CartContext)
   const allVariantsOptions = product.variants.edges?.map(variant => {
     const allOptions = {}
@@ -62,7 +61,7 @@ export default function ProductForm({product}) {
         }
         <button 
           onClick={()=>{addToCart(selectedVariant)}
-          }>Add To Card</button>
+          }>Add To Cart</button>
     </div>
   )
 }
