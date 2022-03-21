@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 const Hero = ({products}) => {
@@ -19,25 +20,37 @@ const Hero = ({products}) => {
               className="relative group-hover:opacity-75 h-72 w-30"
               >
                   <SwiperSlide>
+                  <Link
+                    href={`/products/${c1.node.handle}`}
+                  >
                     <Image 
                       src={c1.node.images.edges[0].node.originalSrc}
                       layout="fill"
                       objectFit="cover"
                     />
+                  </Link>
                   </SwiperSlide>
                   <SwiperSlide>
+                  <Link
+                    href={`/products/${c2.node.handle}`}
+                  >
                     <Image 
                       src={c2.node.images.edges[0].node.originalSrc}
                       layout="fill"
                       objectFit="cover"
                     />
+                  </Link>
                   </SwiperSlide>
                   <SwiperSlide>
+                  <Link
+                    href={`/products/${c3.node.handle}`}
+                  >
                     <Image 
                       src={c3.node.images.edges[0].node.originalSrc}
                       layout="fill"
                       objectFit="cover"
                     />
+                  </Link>
                   </SwiperSlide>             
               </Swiper>
             </div>
