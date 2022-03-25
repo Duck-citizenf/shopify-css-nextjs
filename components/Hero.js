@@ -2,11 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-const Hero = ({products}) => {
-    console.log(products)
-    const c1=products[Math.floor(Math.random()*3)]
-    const c2=products[Math.floor(Math.random()*3)]
-    const c3=products[Math.floor(Math.random()*3)]
+
+const Hero = ({best_products}) => {
+    best_products.sort(function(a, b){return 0.5 - Math.random()});
+    const c1=best_products[1];
+    const c2=best_products[2];
+    const c3=best_products[3];
     
     return(
       <div>
@@ -62,3 +63,4 @@ const Hero = ({products}) => {
 }
 
 export default Hero
+
