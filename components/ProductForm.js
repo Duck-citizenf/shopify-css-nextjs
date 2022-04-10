@@ -16,7 +16,6 @@ export default function ProductForm({product}) {
       image: variant.node.image?.originalSrc,
       options: allOptions,
       variantTitle: variant.node.title,
-      variantPrice: variant.node.priceV2.amount,
       variantQuantity: 1
     }
   })
